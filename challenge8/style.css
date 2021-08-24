@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 1.125rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald';
+  margin-bottom: .5em;
+}
+
+.headline {
+  margin: 0;
+  font-size: 3.75rem;
+  color: white;
+}
+
+.headline__text {
+  color: white;
+}
+
+.headline--brown {
+  color: #A59678;
+}
+
+.headline--section-one {
+  color: #A59678;
+  font-size: 2.25rem;
+}
+
+.headline--main {
+  color: #A59678;
+  font-size: 1.875rem;
+}
+
+.headline--aside {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 1.875rem;
+  color: white;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 1.33em;
+  padding: .5em .75em;
+  background-color: #A59678;
+  border-radius: 50px;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6b5322;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.header {
+  background-color: #2E323F;
+  padding: 2em;
+  position: relative;
+}
+
+.nav {
+  height: auto;
+}
+
+.nav-row {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.nav--visible {
+  visibility: hidden;
+  display: none;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #6F737F;
+  color: white;
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  left: 20px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav__item {
+  margin-top: .5em;
+}
+
+.nav__list--secondary {
+  margin-top: 2em;
+}
+
+.nav__link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: #136c72;
+  padding: 0.25em 1em;
+  border-radius: 10em;
+}
+
+.hero {
+  background-color: #3B4050;
+  min-height: 500px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: .5rem 0;
+}
+
+.section-one {
+  background-color: #f0ede7;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.section-two {
+  margin: 4rem 0;
+}
+
+.aside {
+  max-width: 300px;
+}
+
+.aside-box {
+  text-align: center;
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #3B4050;
+}
+
+.aside-box__text {
+  color: white;
+  font-size: .95rem;
+}
+
+.section--text {
+  font-size: 1.125rem;
+}
+
+.footer {
+  background-color: #3B4050;
+  padding: 2em 0;
+}
+
+.footer__headline {
+  text-align: center;
+  color: white;
+}
+
+.footer--text {
+  font-size: 1rem;
+  color: #6F737F;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__list__heading {
+  color: #A59678;
+}
+
+.footer__item {
+  margin: 0;
+}
+
+.footer__item+.footer__item {
+  padding-top: 0.75em;
+}
+
+.footer__link {
+  color: #6F737F;
+  text-decoration: none;
+  font-size: .75em;
+}
+
+@media (min-width:700px) {
+  .row {
+    display: flex;
+  }
+
+  .main {
+    margin-right: 5rem;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col+.col {
+    margin-left: 1rem;
+  }
+
+  .about {
+    width: 200%;
+    padding-right: 5rem;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+
+  .headline__text {
+    padding-left: 3rem;
+    align-self: flex-end;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav--visible {
+    visibility: visible;
+    display: initial;
+  }
+
+  .nav-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+
+  .nav {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  .nav__list {
+    position: relative;
+    display: flex;
+  }
+
+  .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+
+
+  .nav__list--primary {
+    margin: 0 auto;
+  }
+
+  .nav__list--secondary {
+    margin-top: 0;
+  }
+}

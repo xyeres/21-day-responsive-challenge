@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: Roboto,
+    'Segoe UI',
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-weight: 400;
+}
+
+img {
+  border: none;
+  width: 50%;
+  height: 40%;
+  margin: 0 3em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1128px;
+  width: 85%;
+  padding: 3rem 3rem;
+}
+
+.header {
+  text-align: center;
+  min-height: 600px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline {
+  font-family: serif;
+  font-size: 2.25em;
+  line-height: .90em;
+  color: #824936;
+}
+
+.text-tan {
+  color: #F3EED9;
+}
+
+.headline--hero {
+  font-size: 3.75em;
+  font-weight: 900;
+  max-width: 60%;
+  margin-top: 12px;
+}
+
+.super-headline {
+  font-weight: 400;
+  font-size: 1.125em;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row--reverse {
+  flex-direction: row-reverse;
+}
+
+.col+.col {
+  margin-left: 2.5em;
+}
+
+.white {
+  color: #222C2A;
+}
+
+.tan {
+  background-color: #F3EED9;
+}
+
+.green {
+  background-color: #222C2A;
+}
+
+.clay {
+  background-color: #824936;
+}

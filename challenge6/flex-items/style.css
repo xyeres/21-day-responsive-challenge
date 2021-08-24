@@ -1,0 +1,36 @@
+.container {
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 400px;
+  margin: 10vh 20vh;
+  align-items: stretch;
+}
+
+.item {
+  background-color: powderblue;
+  margin: 1em;
+  padding: 20px;
+  align-items: center;
+  width: 25%;
+  display: flex;
+}
+
+.one {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 150px;
+  order: 3;
+}
+
+.two {
+  /* this gets default shrink and grow of 1 */
+  flex: 250px;
+  order: 1;
+}
+
+.three {
+  order: 2;
+  flex: 9 8 250px;
+}

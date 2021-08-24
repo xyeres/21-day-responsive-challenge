@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 20vh;
+  min-width: 10vh;
+  padding: 1em;
+  color: azure;
+  background-color: royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars {}
+
+.star-list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.star {
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.star:hover {
+  color: lime;
+}
+
+.color {
+  color: lime;
+
+}
